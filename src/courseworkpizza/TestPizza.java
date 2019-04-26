@@ -3,8 +3,7 @@ package courseworkpizza;
 
 
 public class TestPizza {
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args){
         //Create new pizza
         Pizza newPizza = new Pizza(size.Medium, crust.Deep, sauce.Tomato, 
                          topping1.Olives, topping2.None);

@@ -22,8 +22,7 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
     public EditDeletePizzaPage() {
         initComponents();
     }
-    public EditDeletePizzaPage(Order order, HomePage homeP) 
-    {
+    public EditDeletePizzaPage(Order order, HomePage homeP) {
         initComponents();
         this.homeP = homeP;
         theOrder = order;
@@ -38,8 +37,7 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
         this.getContentPane().setBackground(Color.white);
     }
     
-    public Pizza getPizzaToEdit()
-    {
+    public Pizza getPizzaToEdit(){
         pizzaToEdit = theOrder.getPizzaFromOrder(pizzaNumber);
         return pizzaToEdit;
     }
@@ -352,7 +350,7 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+        java.awt.EventQueue.invokeLater(new Runnable(){
             public void run() {
                 new EditDeletePizzaPage().setVisible(true);
             }

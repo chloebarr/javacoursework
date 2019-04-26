@@ -16,7 +16,8 @@ public class Pizza {
     private topping1 topping1;
     private topping2 topping2;
     
-public Pizza(size size, crust crustType, sauce sauce, topping1 topping1, topping2 topping2){
+public Pizza(size size, crust crustType, sauce sauce, topping1 topping1, 
+            topping2 topping2){
     this.size = size;
     this.crustType = crustType;
     this.sauce = sauce;
@@ -39,21 +40,25 @@ public void setTopping1(topping1 topping1) {this.topping1 = topping1;}
 public void setTopping2(topping2 topping2) {this.topping2 = topping2;}
 
 //A method to return a formatted string with two decimal places
-public String twoDP(double n)
-    {
+public String twoDP(double n){
       return String.format("%.2f", n);
    }
 
 public String getTotalPriceAsString(){
-    Double total = this.crustType.getValue() + this.sauce.getValue() + this.size.getValue() + (this.topping1.getValue()*5) + (this.topping2.getValue()*4);
+    Double total = this.crustType.getValue() + this.sauce.getValue() 
+            + this.size.getValue() + (this.topping1.getValue()*5) 
+            + (this.topping2.getValue()*4);
     return twoDP(total);
 }
 public Double getTotalPrice(){
-    Double total = this.crustType.getValue() + this.sauce.getValue() + this.size.getValue() + (this.topping1.getValue()*5) + (this.topping2.getValue()*4);
+    Double total = this.crustType.getValue() + this.sauce.getValue() 
+            + this.size.getValue() + (this.topping1.getValue()*5) 
+            + (this.topping2.getValue()*4);
     return total;
 }
 public String getBasePrice(){
-    double baseCost = this.crustType.getValue() + this.sauce.getValue() + this.size.getValue();
+    double baseCost = this.crustType.getValue() + this.sauce.getValue() 
+            + this.size.getValue();
     return twoDP(baseCost);
 }
 public String getSizePrice(){
@@ -72,15 +77,15 @@ public double getT2Price(){
     return this.topping2.getValue();
 }
 public String getPizzaInfo(Pizza newPizza){
-    return ("TOTAL COST : " + newPizza.getTotalPriceAsString() + 
-        "\n" + newPizza.getSize() + " size : " + newPizza.getSizePrice() 
-        + "\n" + newPizza.getCrust() + " crust : " + 
-        newPizza.getCrustPrice() + "\n" + "BASE COST : " + 
-        newPizza.getBasePrice() + "\n" + "topping : " + newPizza.getTopping1() 
-        + " " + newPizza.getT1Price()+ " x 5 = " + 
-        twoDP(newPizza.getT1Price()*5) + "\n" + "topping : " + 
-        newPizza.getTopping2() + " " + newPizza.getT2Price() + " x 4 = " + 
-        twoDP(newPizza.getT2Price()*4) + "\n" + newPizza.getSauce() + 
-        " sauce : " + newPizza.getSaucePrice());
+    return ("TOTAL COST : " + newPizza.getTotalPriceAsString() 
+            + "\n" + newPizza.getSize() + " size : " + newPizza.getSizePrice() 
+            + "\n" + newPizza.getCrust() + " crust : " + 
+            newPizza.getCrustPrice() + "\n" + "BASE COST : " + 
+            newPizza.getBasePrice() + "\n" + "topping : " 
+            + newPizza.getTopping1() + " " + newPizza.getT1Price()+ " x 5 = " 
+            + twoDP(newPizza.getT1Price()*5) + "\n" + "topping : " + 
+            newPizza.getTopping2() + " " + newPizza.getT2Price() + " x 4 = " + 
+            twoDP(newPizza.getT2Price()*4) + "\n" + newPizza.getSauce() + 
+            " sauce : " + newPizza.getSaucePrice());
 }
 }

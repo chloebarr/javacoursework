@@ -19,8 +19,7 @@ public class HomePage extends javax.swing.JFrame {
      * Creates new form Gui2
      */
     
-    public HomePage() 
-    {
+    public HomePage(){
         initComponents();
         theOrder = new Order();
         orderArea.setText(theOrder.showOrder());

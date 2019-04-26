@@ -2,7 +2,7 @@
 package courseworkpizza;
 
 public class TestOrder {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         //create an order and some pizzas
         Order newOrder = new Order();
         Pizza pizza1 = new Pizza(size.Small, crust.Stuffed, sauce.Pesto, 
@@ -17,9 +17,9 @@ public class TestOrder {
         newOrder.addPizza(pizza3);
         //print the order total 
         String firstAction = "**** Print the overall price of a new order ****"
-                            + " \n \n";
+                + " \n \n";
         System.out.println(firstAction + "Overall order Total = " 
-                            + newOrder.getTotalOrderPrice());
+                + newOrder.getTotalOrderPrice());
         //Show the order as a formatted string
         String secondAction = "\n**** Show the whole order **** \n \n" ;
         System.out.println(secondAction + newOrder.showOrder());
@@ -32,9 +32,8 @@ public class TestOrder {
         System.out.println(fourthAction + newOrder.showOrder());
         //update pizzas
         String fifthAction = "\n**** Update pizza number 1 to size Medium, "
-                            + "with tomato sauce and topping 2 to Extra cheese"
-                            + "****\n \n" + "**** Update Pizza 2 to Deep crust "
-                            + "and no topping 1 ****\n \n";
+                + "with tomato sauce and topping 2 to Extra cheese ****\n \n" 
+                + "**** Update Pizza 2 to Deep crust and no topping 1 ****\n\n";
         
         newOrder.updatePizzaSize(1, size.Medium);
         newOrder.updatePizzaSauce(1, sauce.Tomato);
