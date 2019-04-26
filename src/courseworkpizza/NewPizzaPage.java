@@ -21,6 +21,7 @@ public class NewPizzaPage extends javax.swing.JFrame {
         initComponents();
         theOrder = order;
         this.homeP = homeP;
+        //create a default pizza to start with
         myPizza = new Pizza(size.Small, crust.Thin, sauce.Tomato, topping1.None, topping2.None );
         orderPriceArea.setText(myPizza.getPizzaInfo(myPizza));
         this.getContentPane().setBackground(Color.white);

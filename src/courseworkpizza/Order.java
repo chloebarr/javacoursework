@@ -9,7 +9,8 @@ import java.util.*;
 public class Order {
     private ArrayList<Pizza> pizzas;
     
-    public Order(){
+    public Order()
+    {
         this.pizzas = new ArrayList<Pizza>();
     }
     public void addPizza(Pizza newPizza){
@@ -57,9 +58,9 @@ public class Order {
     public String showOrder(){
         String orderString = "";
         for (Pizza p : pizzas){ 
-            orderString += ("\n"+ "TOTAL COST : " + p.getTotalPriceAsString()+"\n"
-            +"Pizza size : " + p.getSize() +" : "+ p.getSizePrice()+ "\n"
-            +  "Pizza crust : " + p.getCrust() +" : "+ p.getCrustPrice()+ "\n" 
+            orderString += ("\n"+ "TOTAL COST : " + p.getTotalPriceAsString()
+            +"\n" + "Pizza size : " + p.getSize() +" : "+ p.getSizePrice()+ "\n"
+            + "Pizza crust : " + p.getCrust() +" : "+ p.getCrustPrice()+ "\n" 
             + "Pizza sauce : " + p.getSauce() + " : "+ p.getSaucePrice()+"\n" 
             + "Pizza topping : " + p.getTopping1() +" : " + p.getT1Price() 
             + "\n" + "Pizza topping : " + p.getTopping2() + " : " 

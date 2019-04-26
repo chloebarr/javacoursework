@@ -244,7 +244,7 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
     }//GEN-LAST:event_okPizzaBtnActionPerformed
 
     private void sizeCmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sizeCmbActionPerformed
-        theOrder.updatePizzaSize(pizzaNumber, (size)(sizeCmb.getSelectedItem()));
+        theOrder.updatePizzaSize(pizzaNumber,(size)(sizeCmb.getSelectedItem()));
         pizzaToEdit = getPizzaToEdit();
         orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
 
@@ -273,25 +273,29 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteBtnActionPerformed
 
     private void sauceCmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sauceCmbActionPerformed
-        theOrder.updatePizzaSauce(pizzaNumber, (sauce)(sauceCmb.getSelectedItem()));
+        theOrder.updatePizzaSauce(pizzaNumber, 
+                                (sauce)(sauceCmb.getSelectedItem()));
         pizzaToEdit = getPizzaToEdit();
         orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
     }//GEN-LAST:event_sauceCmbActionPerformed
 
     private void crustCmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crustCmbActionPerformed
-        theOrder.updatePizzaCrust(pizzaNumber, (crust)(crustCmb.getSelectedItem()));
+        theOrder.updatePizzaCrust(pizzaNumber,
+                                (crust)(crustCmb.getSelectedItem()));
         pizzaToEdit = getPizzaToEdit();
         orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
     }//GEN-LAST:event_crustCmbActionPerformed
 
     private void topping1CmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_topping1CmbActionPerformed
-        theOrder.updatePizzaTopping1(pizzaNumber, (topping1)(topping1Cmb.getSelectedItem()));
+        theOrder.updatePizzaTopping1(pizzaNumber, 
+                                    (topping1)(topping1Cmb.getSelectedItem()));
         pizzaToEdit = getPizzaToEdit();
         orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
     }//GEN-LAST:event_topping1CmbActionPerformed
 
     private void topping2CmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_topping2CmbActionPerformed
-        theOrder.updatePizzaTopping2(pizzaNumber, (topping2)(topping2Cmb.getSelectedItem()));
+        theOrder.updatePizzaTopping2(pizzaNumber,
+                                    (topping2)(topping2Cmb.getSelectedItem()));
         pizzaToEdit = getPizzaToEdit();
         orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
     }//GEN-LAST:event_topping2CmbActionPerformed

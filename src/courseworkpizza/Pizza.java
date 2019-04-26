@@ -38,6 +38,7 @@ public void setSauce(sauce sauce) {this.sauce = sauce;}
 public void setTopping1(topping1 topping1) {this.topping1 = topping1;}
 public void setTopping2(topping2 topping2) {this.topping2 = topping2;}
 
+//A method to return a formatted string with two decimal places
 public String twoDP(double n)
     {
       return String.format("%.2f", n);
