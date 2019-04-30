@@ -237,7 +237,7 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
 
     private void okPizzaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okPizzaBtnActionPerformed
         homeP.orderNeedsUpdate();
-        this.setVisible(false);
+        this.dispose();
 
     }//GEN-LAST:event_okPizzaBtnActionPerformed
 

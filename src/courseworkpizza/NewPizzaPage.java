@@ -235,7 +235,7 @@ public class NewPizzaPage extends javax.swing.JFrame {
     private void addPizzaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPizzaBtnActionPerformed
         theOrder.addPizza(myPizza);
         homeP.orderNeedsUpdate();
-        this.setVisible(false);
+        this.dispose();
     
         
     }//GEN-LAST:event_addPizzaBtnActionPerformed

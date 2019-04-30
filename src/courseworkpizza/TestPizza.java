@@ -15,6 +15,13 @@ public class TestPizza {
         Pizza pizza2 = new Pizza(size.Large, crust.Thin, sauce.Pesto, 
                 topping1.Mushroom, topping2.Pepperoni);
         System.out.println(outputInfo +"\n \n"+ pizza2.getPizzaInfo(pizza2));
+        String outputInfo2 = "\n******************************************** \n"
+                + "Set the sauce to tomato ";
+        String outputInfo3 = "********************************************* \n"
+                + "Show the pizza price individually : £";
+        pizza2.setSauce(sauce.Tomato);
+        System.out.println(outputInfo2 + "\n \n"+ pizza2.getPizzaInfo(pizza2)
+                +" \n \n" + outputInfo3 + pizza2.getTotalPriceAsString());
     }
    
 
