@@ -53,7 +53,7 @@ public class HomePage extends javax.swing.JFrame {
         totalText = new javax.swing.JTextField();
         closeBtn = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(900, 800));
 
         newPizzaBtn.setFont(new java.awt.Font("AR BONNIE", 0, 18)); // NOI18N

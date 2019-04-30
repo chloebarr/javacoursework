@@ -62,8 +62,9 @@ public class Order {
             + "Pizza crust : " + p.getCrust() +" : "+ p.getCrustPrice()+ "\n" 
             + "Pizza sauce : " + p.getSauce() + " : "+ p.getSaucePrice()+"\n" 
             + "Pizza topping : " + p.getTopping1() +" : " + p.getT1Price() 
-            + "\n" + "Pizza topping : " + p.getTopping2() + " : " 
-            + p.getT2Price() + "\n" );
+            +" * 5 = " + p.getT1Price()*5 + "\n" + "Pizza topping : " 
+            + p.getTopping2() + " : " 
+            + p.getT2Price() + "* 5" + p.getT1Price()*5 + "\n" );
          }
         return orderString;
     }
