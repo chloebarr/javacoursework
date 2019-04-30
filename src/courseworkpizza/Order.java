@@ -60,7 +60,8 @@ public class Order {
             orderString += ("\n"+ "TOTAL COST : " + p.getTotalPriceAsString()
             +"\n" + "Pizza size : " + p.getSize() +" : "+ p.getSizePrice()+ "\n"
             + "Pizza crust : " + p.getCrust() +" : "+ p.getCrustPrice()+ "\n" 
-            + "Pizza sauce : " + p.getSauce() + " : "+ p.getSaucePrice()+"\n" 
+            +"Base Cost : " + p.getBasePrice() + "\n" + "Pizza sauce : " 
+            + p.getSauce() + " : "+ p.getSaucePrice()+"\n" 
             + "Pizza topping : " + p.getTopping1() +" : " + p.getT1Price() 
             +" * 5 = " + p.getT1Price()*5 + "\n" + "Pizza topping : " 
             + p.getTopping2() + " : " 
