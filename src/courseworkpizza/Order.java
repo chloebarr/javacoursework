@@ -64,7 +64,7 @@ public class Order {
             + "Pizza topping : " + p.getTopping1() +" : " + p.getT1Price() 
             +" * 5 = " + p.getT1Price()*5 + "\n" + "Pizza topping : " 
             + p.getTopping2() + " : " 
-            + p.getT2Price() + "* 5" + p.getT1Price()*5 + "\n" );
+            + p.getT2Price() + "* 4 = " + p.getT2Price()*4 + "\n" );
          }
         return orderString;
     }

@@ -307,6 +307,12 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
             ///addddd else
             pizzaToEdit = getPizzaToEdit();
             orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
+            //set combo boxes to new pizza 
+            crustCmb.setSelectedItem(pizzaToEdit.getCrust());
+            sizeCmb.setSelectedItem(pizzaToEdit.getSize());
+            sauceCmb.setSelectedItem(pizzaToEdit.getSauce());
+            topping1Cmb.setSelectedItem(pizzaToEdit.getTopping1());
+            topping2Cmb.setSelectedItem(pizzaToEdit.getTopping2());
         }
     }//GEN-LAST:event_rightBtnActionPerformed
 
@@ -319,6 +325,12 @@ public class EditDeletePizzaPage extends javax.swing.JFrame {
             //add else
             pizzaToEdit = getPizzaToEdit();
             orderPriceArea.setText(pizzaToEdit.getPizzaInfo(pizzaToEdit));
+            //set combo boxes to new pizza 
+            crustCmb.setSelectedItem(pizzaToEdit.getCrust());
+            sizeCmb.setSelectedItem(pizzaToEdit.getSize());
+            sauceCmb.setSelectedItem(pizzaToEdit.getSauce());
+            topping1Cmb.setSelectedItem(pizzaToEdit.getTopping1());
+            topping2Cmb.setSelectedItem(pizzaToEdit.getTopping2());
         }
     }//GEN-LAST:event_leftBtnActionPerformed
 
